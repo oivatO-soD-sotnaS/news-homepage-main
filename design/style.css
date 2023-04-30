@@ -187,7 +187,6 @@ nav a:hover{
 .popular-card{
     display: flex;
     gap: 20px;
-    /* border: 1px solid black; */
 }
 .popular{
     padding: 5svh 0px;
@@ -236,22 +235,26 @@ nav a:hover{
         margin: 0;
     }
     header{
-        margin: 10px 5%;
-        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        
+        align-items: center;
+        position: relative;
+        width: 100%;
     }
     nav{
         display: flex;
-        
-        background-color: #fff;
+        background-color: transparent;
         height: fit-content;
         width: fit-content;
-        position: relative;
+        position: static;
         transform: none;
         transition: transform 400ms ease-in-out;
-        z-index: 3;
+
     }
     nav ul{
-        position: relative;
+        position: static;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -269,27 +272,18 @@ nav a:hover{
         transition: color 0.3s ease;
     }
 
-
     .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0px 5%;
-        gap: 20px;
-        /* border: 1px solid black; */
-        
+        height: 100svh;
+        justify-content: space-evenly;
     }
     .hero-top{
         display: flex;
         gap: 30px;
-        height: 50svh;
     }
     .left{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 5svh;
-        width: 70%;
         padding: 0;
     }
     .left-top{
@@ -401,9 +395,6 @@ nav a:hover{
     }
 }
 @media all and (min-width:2160px){
-    .hero{
-        gap: 10svh;
-    }
     .popular{
         font-size: 20px;
     }
@@ -441,8 +432,5 @@ nav a:hover{
         font-size: 1em;
         padding: 1em;
     }
-    .hero-top{
-        height: 55svh;
-    }   
 }
     
