@@ -1,19 +1,17 @@
-const burguerButton = document.querySelector('.icon-menu');
-const mobileMenu = document.querySelector('.menu')
-const hero = document.querySelector('.hero')
-let menuOn = 0;
+const navLink1 = document.querySelector('#home-link');
+const navLink2 = document.querySelector('#new-link');
+const navLink3 = document.querySelector('#popular-link');
+const navLink4 = document.querySelector('#trending-link');
+const navLink5 = document.querySelector('#category-link');
 
-burguerButton.addEventListener("click", () => {
-    
-    if(menuOn === 0) {
-        burguerButton.src = "assets/images/icon-menu-close.svg";
-        mobileMenu.style.display = "block";
-        
-        menuOn = 1;
-    }
-    else{ 
-        burguerButton.src = "assets/images/icon-menu.svg";
-        mobileMenu.style.display = "none";
-        menuOn = 0;
-    }
-})
+const nav = document.querySelector('#nav-toggle');
+
+navLink1.addEventListener("click", removeNav);
+navLink2.addEventListener("click", removeNav);
+navLink3.addEventListener("click", removeNav);
+navLink4.addEventListener("click", removeNav);
+navLink5.addEventListener("click", removeNav);
+
+function removeNav(){
+    nav.checked = false;
+}
